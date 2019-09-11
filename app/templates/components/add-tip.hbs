@@ -1,0 +1,8 @@
+<select class="custom-select" onchange={{action "selectOption" value='target.value'}} >
+          <option value="" selected disabled hidden>Choose Tip Percentage</option>
+          <option value="fifteen">.15 - Decent Service</option>
+          <option value="eighteen">.18 - Good Service</option>
+          <option value="twenty">.20 - Great Service</option>
+</select>
+
+<button {{action "addTip"}}> Calculate Tip </button>

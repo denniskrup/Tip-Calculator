@@ -1,0 +1,6 @@
+{{input type="number" step="0.01" class="form-control" value=originalBill placeholder="$0.00"}}
+
+<AddTip @onAddTip={{action 'addTipToCalculator'}}/>
+<TipRender @tipPercent={{this.model.tipPercent}}/>
+<TipRender @originalBill={{this.model.originalBill}}/>
+<TipRender @totalBill={{this.model.totalBill}}/>
