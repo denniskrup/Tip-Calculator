@@ -1,6 +1,18 @@
-{{input type="number" step="0.01" class="form-control" value=originalBill placeholder="$0.00"}}
+<form>
+                <div class="form-group">
+                    <label>Enter Total Bill Amount</label>
+                    {{input type="number" step="0.01" class="form-control" value=originalBill placeholder="$0.00"}}
+                </div>
+                <div class = "form-group">
+                    <AddTip @onAddTip={{action 'addTipToCalculator'}}/>
+                </div>
+                <div class="form-group mb-5">
+                        <div class = "mb-5 ">   
+                            <TipRender @originalBill={{this.model.originalBill}}/>                         
+                            <TipRender @tipPercent={{this.model.tipPercent}}/>
+                            <TipRender @totalBill={{this.model.totalBill}}/>
+                        </div>
+                </div>
+</form>
+ 
 
-<AddTip @onAddTip={{action 'addTipToCalculator'}}/>
-<TipRender @tipPercent={{this.model.tipPercent}}/>
-<TipRender @originalBill={{this.model.originalBill}}/>
-<TipRender @totalBill={{this.model.totalBill}}/>

@@ -1,0 +1,133 @@
+form label {
+    display: block;
+    margin: 25px 0;
+    font-weight: bold;
+}
+
+form input, 
+form select{
+    text-align: center;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.background{
+    background: url('/assets/images/resturant.png') center center no-repeat;
+    background-size: cover;
+    height: 969px
+}
+
+#container {
+    width: 500px;
+    height: 850px;
+    margin: auto;
+    padding : 50px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 15px -8px #000;
+    border-radius: 25px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #0C5376;
+    font-size: 16px;
+}
+
+button {
+    background: #F19C48;
+    border-radius: 5px;
+    width: 300px;
+    height: 35px;
+    text-transform: uppercase;
+
+}
+p{
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+button:hover{
+    background-color: #C33030;
+}
+
+button:active{
+    background-color: green;
+} 
+
+#total-tip:before {
+    content: "Total Tip Amount:";
+    font-size: 17px;
+    color: black;
+    text-transform: uppercase;
+    display: block;
+}
+
+.currency-font{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+#split-bill:before {
+    content: "Total Amount Per Person:";
+    font-size: 17px;
+    color: black;
+    text-transform: uppercase;
+    display: block;
+}
+
+#total-bill:before {
+    content: "Total Amount:";
+    font-size: 17px;
+    color: black;
+    text-transform: uppercase;
+    display: block;
+    
+}
+
+.dollar-sign sup {
+    font-size: 24px;
+    top: -5px;
+}
+
+.financials {
+    background-color: #CBF3AA;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.financials:hover
+{
+    transform: scale(1.09);
+}
+
+.new-font {
+    font-family: 'Bree Serif', serif;
+
+}
+
+.disappear {
+    display: none;
+    height: 700px;
+}
+
+.font-color {
+    color: rgb(13, 23, 206);
+    font-size: 19px;
+}
+.dark-mode {
+    background-color: #313134;
+    
+}
+
+.light-mode {
+    background-color: white;
+}
+
+.mode {
+    background-color: white;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 15px;
+    position:absolute;
+}
