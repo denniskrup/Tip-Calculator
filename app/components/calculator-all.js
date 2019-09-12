@@ -11,15 +11,16 @@ export default Component.extend({
 
             
             //set model values
-            this.set('model.originalBill', '$' + originalBill);
-            this.set('model.tipPercent', '$' + +originalBill * +tip);
-            this.set('model.totalBill', +originalBill + +this.get('model.tipPercent'));
+            this.set('model.originalBill', originalBill);
+            this.set('model.tipPercent', (+originalBill * +tip).toFixed(2));
+            this.set('model.totalBill', (+originalBill + +this.get('model.tipPercent')).toFixed(2));
 
             //log some values
             console.log("Original Bill Amount: ", originalBill);
             console.log("Total Bill Amount: ", this.get('model.totalBill'));
 
-
+            //make values appear
+            document.getElementById("appear").style.display = "block";
         }
     }
 });

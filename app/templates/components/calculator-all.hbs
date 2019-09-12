@@ -6,13 +6,15 @@
                 <div class = "form-group">
                     <AddTip @onAddTip={{action 'addTipToCalculator'}}/>
                 </div>
-                <div class="form-group mb-5">
-                        <div class = "mb-5 ">   
-                            <TipRender @originalBill={{this.model.originalBill}}/>                         
-                            <TipRender @tipPercent={{this.model.tipPercent}}/>
-                            <TipRender @totalBill={{this.model.totalBill}}/>
-                        </div>
-                </div>
+        <div class="form-group mb-5">
+            <div class = "mb-5 ">  
+                <div class="alert alert-success mt-5 disappear" id="appear" role="alert">
+                            <p class ="font-color">Your Original Bill Amount<TipRender @originalBill={{this.model.originalBill}}/></p>                      
+                            <p class ="font-color">Amount of tip you should leave<TipRender @tipPercent={{this.model.tipPercent}}/></p> 
+                            <p class ="font-color">Your Total Bill Amount should be<TipRender @totalBill={{this.model.totalBill}}/></p>
+	            </div>             
+             </div>
+        </div>
 </form>
  
 
