@@ -13,6 +13,7 @@ export default Component.extend({
             this.number = .20;    
 
             //log percent amount
+            console.clear()
             console.log("Tip Percentage: ", this.number.toFixed(2));
         },
         addTip() {

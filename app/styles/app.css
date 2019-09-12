@@ -130,3 +130,21 @@ button:active{
     margin-left: 15px;
     position:absolute;
 }
+.margin-bottom{
+    margin-bottom: 40px;
+}
+.margin-top-label {
+    margin-top: -20px;
+}
+.margin-top{
+    margin-top: 40px;
+}
+.black-color {
+    color: black;
+}
+.green-color {
+    color: green;
+}
+.dollar-sign-margin{
+    margin-right: -4px;
+}

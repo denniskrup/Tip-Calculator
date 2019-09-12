@@ -4,7 +4,7 @@ export default Component.extend({
     actions: {
         addTipToCalculator(tip){
 
-            console.clear()
+            
 
             //set variable original bill to be equal to user input
             var originalBill = this.originalBill;
@@ -21,6 +21,13 @@ export default Component.extend({
 
             //make values appear
             document.getElementById("appear").style.display = "block";
+
+            //clear form
+            this.setProperties({
+                originalBill: '',
+                
+            })
+            document.getElementById('reset').selectedIndex = 0;
         }
     }
 });
